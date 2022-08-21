@@ -13,4 +13,12 @@
 
 // Layout
 
-@import './layout/header';
+@import './layout/header/header';
+@import './layout/main-page/hero';
+@import './layout/main-page/peculiarities';
+@import './layout/main-page/specialization';
+@import './layout/main-page/team';
+@import './layout/main-page/clients';
+
+@import './layout/footer/footer';
+// @import '';

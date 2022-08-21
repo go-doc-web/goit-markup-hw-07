@@ -1,0 +1,15 @@
+.footer {
+  padding: 60px 0;
+  background-color: var(--footer-bg-color);
+}
+
+.container-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  color: var(--white-text-color);
+  margin-right: 0;
+  margin-bottom: 20px;
+}

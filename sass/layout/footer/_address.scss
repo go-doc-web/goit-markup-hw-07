@@ -1,0 +1,28 @@
+.address {
+  font-style: normal;
+  max-height: 81px;
+}
+
+.address-item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address-link {
+  color: var(--white-text-color);
+  transition: color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--hover-link);
+  }
+}
+
+.address-contact {
+  line-height: calc(24 / 14);
+  color: var(--footer-link-color);
+}
+
+.footer-address {
+  margin-right: 70px;
+  flex-grow: 1;
+}

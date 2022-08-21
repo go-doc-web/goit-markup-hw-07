@@ -3,13 +3,13 @@
   margin-bottom: 50px;
 }
 
-.clients-logo-list {
+.clients__list {
   display: flex;
   justify-content: center;
   gap: 30px;
 }
 
-.clients-logo-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,14 +21,14 @@
   color: #afb1b8;
 
   transition: border 250ms var(--timing-function), color 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
 }
 
-.icon-clients-logo {
+.clients__logo {
   fill: currentColor;
-}
-
-.clients-logo-link:hover,
-.clients-logo-link:focus {
-  border: 1px solid var(--accent-color);
-  color: var(--accent-color);
 }

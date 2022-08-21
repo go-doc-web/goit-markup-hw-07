@@ -18,13 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+
     <link rel="stylesheet" href="css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="nav header-nav">
+      <div class="container header__container">
+        <nav class="nav header__nav">
           <a class="logo header__logo link" href="./index.html">
             <span class="logo__accent">Web</span>Studio</a
           >
@@ -35,7 +35,7 @@
             </li>
 
             <li class="nav__item">
-              <a class="nav__link link current" href="./portfolio.html">Портфоліо</a>
+              <a class="nav__link link nav__link--current" href="./portfolio.html">Портфоліо</a>
             </li>
 
             <li class="nav__item">
@@ -43,10 +43,10 @@
             </li>
           </ul>
         </nav>
-        <ul class="header__list list">
-          <li class="header__item">
-            <a class="header__link link" href="mailto:info@devstudio.com">
-              <svg class="header__icon" width="16px" height="12px">
+        <ul class="header__connection connection__list list">
+          <li class="connection__item">
+            <a class="connection__link link" href="mailto:info@devstudio.com">
+              <svg class="connection__icon" width="16px" height="12px">
                 <use href="./images/icons/sprite2.svg#icon-envelope-2"></use>
               </svg>
 
@@ -54,9 +54,9 @@
             >
           </li>
 
-          <li class="header-item">
-            <a class="header__link link" href="tel:+380961111111">
-              <svg class="header__icon" width="10px" height="16px">
+          <li class="connection__item">
+            <a class="connection__link link" href="tel:+380961111111">
+              <svg class="connection__icon" width="10px" height="16px">
                 <use href="./images/icons/sprite2.svg#icon-smartphone"></use>
               </svg>
 
@@ -115,7 +115,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">Технокряк</h2>
+                  <h2 class="cards-title subtitle--color">Технокряк</h2>
                   <p class="cards-category">Веб-сайт</p>
                 </div>
               </a>
@@ -140,7 +140,7 @@
                 </div>
 
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">
+                  <h2 class="cards-title subtitle--color">
                     Постер
                     <span lang="en">New Orlean vs Golden Star</span>
                   </h2>
@@ -168,7 +168,7 @@
                 </div>
 
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">
+                  <h2 class="cards-title subtitle--color">
                     Ресторан
                     <span lang="en">Seafood</span>
                   </h2>
@@ -196,7 +196,7 @@
                 </div>
 
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">
+                  <h2 class="cards-title subtitle--color">
                     Проєкт
                     <span lang="en">Prime</span>
                   </h2>
@@ -223,7 +223,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">
+                  <h2 class="cards-title subtitle--color">
                     Проєкт
                     <span lang="en">Boxes</span>
                   </h2>
@@ -250,7 +250,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="cards-title subtitle" lang="en">Inspiration has no Borders</h2>
+                  <h2 class="cards-title subtitle--color" lang="en">Inspiration has no Borders</h2>
                   <p class="cards-category">Веб-сайт</p>
                 </div>
               </a>
@@ -274,7 +274,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">
+                  <h2 class="cards-title subtitle--color">
                     Видання
                     <span lang="en">Limited Edition</span>
                   </h2>
@@ -301,7 +301,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">
+                  <h2 class="cards-title subtitle--color">
                     Проєкт
                     <span lang="en">LAB</span>
                   </h2>
@@ -328,7 +328,7 @@
                   </div>
                 </div>
                 <div class="card-content">
-                  <h2 class="cards-title subtitle">Growing Business</h2>
+                  <h2 class="cards-title subtitle--color">Growing Business</h2>
                   <p class="cards-category">Додаток</p>
                 </div>
               </a>
@@ -341,8 +341,8 @@
     <footer class="footer">
       <div class="container container-wrapper">
         <div class="footer-address">
-          <a class="logo link footer-logo" href="./index.html">
-            <span class="logo-accent">Web</span>Studio
+          <a class="logo link footer__logo logo--ligth" href="./index.html">
+            <span class="logo__accent">Web</span>Studio
           </a>
           <address class="address">
             <ul class="address-list list">
@@ -369,6 +369,7 @@
             </ul>
           </address>
         </div>
+
         <div class="footer-social">
           <b class="footer-social-text">приєднуйтесь</b>
           <ul class="footer-social-list list">

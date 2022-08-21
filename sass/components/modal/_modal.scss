@@ -15,10 +15,6 @@
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .modal {
   position: relative;
   position: absolute;
@@ -35,6 +31,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 300ms var(--timing-function);
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0);
+  }
 }
 
 .modal-close {
@@ -55,13 +55,13 @@
   color: #000000;
   transition: color 250ms var(--timing-function);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .icon-close {
   fill: currentColor;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: var(--accent-color);
 }

@@ -23,6 +23,15 @@
   border-radius: 4px;
   transition: border-color 250ms var(--timing-function);
   outline: transparent;
+
+  &::placeholder,
+  &::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 /* .modal-input:not(:focus):not(:placeholder-shown):valid {
@@ -36,15 +45,6 @@
 /* .modal-input:required {
   border-color: red;
 } */
-
-.modal-input::placeholder,
-.modal-text::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-
-  color: rgba(117, 117, 117, 0.5);
-}
 
 .modal-label {
   display: inline-block;
@@ -107,6 +107,27 @@
   letter-spacing: 0.03em;
 
   color: #757575;
+
+  span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 250ms var(--timing-function);
+
+    .modal-check:checked + & {
+      background-color: var(--accent-color);
+      border: none;
+    }
+
+    .modal-check:focus + & {
+      border-color: var(--accent-color);
+    }
+  }
 }
 
 .check-link {
@@ -120,31 +141,10 @@
 
 .check-icon {
   fill: transparent;
-}
 
-.check-text span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-right: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: border-color 250ms var(--timing-function);
-}
-
-.modal-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border: none;
-}
-
-.modal-check:checked + .check-text .check-icon {
-  fill: #ffffff;
-}
-
-.modal-check:focus + .check-text span {
-  border-color: var(--accent-color);
+  .modal-check:checked + .check-text & {
+    fill: #ffffff;
+  }
 }
 
 .check-field {
@@ -171,27 +171,5 @@
 
 .modal-btn {
   display: block;
-
-  min-width: 200px;
-  min-height: 50px;
   margin: 0 auto;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: calc(30 / 16);
-  letter-spacing: 0.06em;
-
-  color: var(--white-text-color);
-  border-color: transparent;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  cursor: pointer;
-  transition: background-color 250ms var(--timing-function);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #188ce8;
 }

@@ -115,6 +115,26 @@ b {
   color: var(--accent-color);
 }
 
+.button {
+  min-width: 200px;
+  min-height: 50px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  border-color: transparent;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms var(--timing-function);
+}
+.button:hover, .button:focus {
+  background-color: #188ce8;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
@@ -131,10 +151,6 @@ b {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0);
-}
-
 .modal {
   position: relative;
   position: absolute;
@@ -148,6 +164,9 @@ b {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 300ms var(--timing-function);
+}
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0);
 }
 
 .modal-close {
@@ -167,14 +186,12 @@ b {
   transition: color 250ms var(--timing-function);
   cursor: pointer;
 }
+.modal-close:hover, .modal-close:focus {
+  color: var(--accent-color);
+}
 
 .icon-close {
   fill: currentColor;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: var(--accent-color);
 }
 
 .modal-title {
@@ -200,6 +217,12 @@ b {
   transition: border-color 250ms var(--timing-function);
   outline: transparent;
 }
+.modal-input::placeholder, .modal-input::placeholder {
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
 
 /* .modal-input:not(:focus):not(:placeholder-shown):valid {
   background-color: rgb(204, 126, 113);
@@ -211,14 +234,6 @@ b {
 /* .modal-input:required {
   border-color: red;
 } */
-.modal-input::placeholder,
-.modal-text::placeholder {
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
 .modal-label {
   display: inline-block;
   margin-bottom: 4px;
@@ -275,6 +290,24 @@ b {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.check-text span {
+  width: 16px;
+  height: 15px;
+  border: 2px solid #212121;
+  border-radius: 2px;
+  margin-right: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: border-color 250ms var(--timing-function);
+}
+.modal-check:checked + .check-text span {
+  background-color: var(--accent-color);
+  border: none;
+}
+.modal-check:focus + .check-text span {
+  border-color: var(--accent-color);
+}
 
 .check-link {
   color: var(--accent-color);
@@ -287,30 +320,8 @@ b {
 .check-icon {
   fill: transparent;
 }
-
-.check-text span {
-  width: 16px;
-  height: 15px;
-  border: 2px solid #212121;
-  border-radius: 2px;
-  margin-right: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: border-color 250ms var(--timing-function);
-}
-
-.modal-check:checked + .check-text span {
-  background-color: var(--accent-color);
-  border: none;
-}
-
 .modal-check:checked + .check-text .check-icon {
   fill: #ffffff;
-}
-
-.modal-check:focus + .check-text span {
-  border-color: var(--accent-color);
 }
 
 .check-field {
@@ -336,26 +347,7 @@ b {
 } */
 .modal-btn {
   display: block;
-  min-width: 200px;
-  min-height: 50px;
   margin: 0 auto;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--white-text-color);
-  border-color: transparent;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  cursor: pointer;
-  transition: background-color 250ms var(--timing-function);
-}
-
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: #188ce8;
 }
 
 .header {
@@ -904,24 +896,7 @@ b {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 200px;
-  min-height: 50px;
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: var(--white-text-color);
-  border-color: transparent;
-  cursor: pointer;
   overflow: hidden;
-}
-.footer-form-btn:hover, .footer-form-btn:focus {
-  background-color: #188ce8;
 }
 
 .icon-btn-send {

@@ -1,8 +1,4 @@
 .specialization {
-  padding-top: 0;
-}
-
-.specialization__list {
   display: flex;
 }
 
@@ -30,11 +26,6 @@
   text-transform: uppercase;
 
   color: var(--white-text-color);
-}
-
-.specialization__title {
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
 }
 
 .specialization__item:not(:last-child) {

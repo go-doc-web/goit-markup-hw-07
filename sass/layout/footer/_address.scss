@@ -3,11 +3,11 @@
   max-height: 81px;
 }
 
-.address-item:not(:last-child) {
+.address__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.address-link {
+.address__link {
   color: var(--white-text-color);
   transition: color 250ms var(--timing-function);
 
@@ -17,12 +17,7 @@
   }
 }
 
-.address-contact {
+.address__contact {
   line-height: calc(24 / 14);
   color: var(--footer-link-color);
-}
-
-.footer-address {
-  margin-right: 70px;
-  flex-grow: 1;
 }

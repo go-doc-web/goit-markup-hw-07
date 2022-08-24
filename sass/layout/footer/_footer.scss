@@ -3,7 +3,21 @@
   background-color: var(--footer-bg-color);
 }
 
-.container-wrapper {
+.container__footer-wrap {
   display: flex;
   align-items: baseline;
+}
+
+.footer__address {
+  margin-right: 70px;
+  flex-grow: 1;
+}
+
+.footer__social {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  margin-right: 0;
+  margin-bottom: 20px;
 }

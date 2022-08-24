@@ -1,13 +1,9 @@
-.footer-social {
-  margin-right: 93px;
-}
-
-.footer-social-list {
+.footer-soc {
   display: flex;
   gap: 10px;
 }
 
-.footer-social-text {
+.footer__social-text {
   display: block;
   font-weight: 700;
   font-size: 14px;
@@ -18,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.footer-social-link {
+.footer-soc__link {
   display: flex;
   justify-content: center;
   align-items: center;

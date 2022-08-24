@@ -1,4 +1,4 @@
-.footer-form-title {
+.footer-form__title {
   display: inline-block;
   font-weight: 700;
   font-size: 14px;
@@ -11,13 +11,13 @@
   color: var(--white-text-color);
 }
 
-.footer-form-field {
+.footer-form__field {
   display: flex;
   align-items: center;
   gap: 12px;
 }
 
-.footer-input {
+.footer-form__input {
   min-width: 358px;
   min-height: 50px;
   padding: 15px 0 15px 16px;
@@ -41,11 +41,7 @@
   }
 }
 
-.btn-wrap {
-  position: relative;
-}
-
-.footer-form-btn {
+.footer-form__btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,6 +49,6 @@
   overflow: hidden;
 }
 
-.icon-btn-send {
+.footer-form__btn-icon {
   margin-left: 10px;
 }

@@ -18,12 +18,12 @@
   /* gap: 93px; */
 }
 
-.nav__list {
+.navigation {
   display: flex;
   gap: 50px;
 }
 
-.nav__link {
+.navigation__link {
   position: relative;
   display: inline-block;
   padding: 32px 2px 31px;
@@ -59,7 +59,7 @@
   margin-left: auto;
 }
 
-.connection__list {
+. connection {
   display: flex;
   align-items: center;
   gap: 50px;
